@@ -31,7 +31,7 @@ public class LogAspect {
         System.out.println("注解式拦截" + action.name());    //通过反射可获得注解上的属性，然后做日志记录相关的操作，下面的相同。
     }
 
-    @Before("execution(*ch3.DemoMethodService.*(..))")  //声明一个建言，此建言直接使用拦截规则作为参数。
+    @Before("execution(* ch3.DemoMethodService.*(..))")  //声明一个建言，此建言直接使用拦截规则作为参数。
     public void before(JoinPoint joinPoint){
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
