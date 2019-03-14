@@ -30,6 +30,12 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.5</version>
         </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <!-- commons-io将file转换成字符串 -->
     </dependencies>
     <build>
         <plugins>
